@@ -10,9 +10,9 @@
     <ImageView
         android:id="@+id/postImageView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="270dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
@@ -28,7 +28,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/border"
-        android:hint="Caption" />
+        android:paddingStart="15dp"
+        android:hint="Caption"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/chooseImageButton"
@@ -49,9 +51,22 @@
         android:layout_below="@+id/chooseImageButton"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="149dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="154dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn"
         android:text="Upload" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:text="Upload your Posts"
+        android:textColor="#1976D2"
+        android:textSize="35sp" />
 </RelativeLayout>

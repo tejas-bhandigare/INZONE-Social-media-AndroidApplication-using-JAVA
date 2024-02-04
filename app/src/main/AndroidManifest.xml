@@ -17,13 +17,13 @@
         tools:targetApi="31">
         <activity
             android:name=".PostViewActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UploadPostsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UserDataActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".search_user"
             android:exported="true" />
