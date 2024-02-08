@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -107,6 +109,9 @@ public class UploadPostsActivity extends AppCompatActivity {
 
                                         // Save post information to Firebase Realtime Database
                                         savePostToDatabase(userId, caption, imageUrl);
+
+                                        Toast.makeText(UploadPostsActivity.this, "upload post sucessfully", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(UploadPostsActivity.this,firstview.class));
                                     }
                                 });
                             }
@@ -117,6 +122,8 @@ public class UploadPostsActivity extends AppCompatActivity {
                                 // Handle image upload failure
                             }
                         });
+
+
             }
         }
     }

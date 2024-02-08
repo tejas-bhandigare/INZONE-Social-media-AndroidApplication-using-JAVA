@@ -73,13 +73,14 @@ public class firstview extends AppCompatActivity {
        });
 
 
+
 //       ImageView myImageView4 = findViewById(R.id.drawer_menu);
 //
 //       myImageView4.setOnClickListener(new OnClickListener() {
 //           @Override
 //           public void onClick(View v) {
 //               // Handle the click event, e.g., start the next activity
-//               Intent intent = new Intent(firstview.this, DrawerActivity.class);
+//               Intent intent = new Intent(firstview.this, Drawer_Activity.class);
 //               startActivity(intent);
 //           }
 //       });
@@ -108,4 +109,6 @@ public class firstview extends AppCompatActivity {
         // Finish the current activity to prevent the user from going back to the main screen using the back button.
         finish();
     }
+
+
 }
