@@ -56,6 +56,7 @@ public class search_user extends AppCompatActivity {
                 userAdapter.notifyDataSetChanged();
             }
 
+
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(search_user.this, "Error: " + databaseError.getMessage(), Toast.LENGTH_SHORT).show();
