@@ -1,5 +1,7 @@
 package com.example.project;
 
+import android.widget.ImageView;
+
 public class UserInfo {
     private String userId;
     private String username;
@@ -7,14 +9,19 @@ public class UserInfo {
     private String email;
 
 
+
+
     public UserInfo() {
     }
 
-    public UserInfo(String userId, String username, String bio, String email) {
+
+
+    public UserInfo(String userId, String username, String bio, String email ){
         this.userId = userId;
         this.username = username;
         this.bio = bio;
         this.email = email;
+
     }
 
     public String getUserId() {
@@ -48,4 +55,6 @@ public class UserInfo {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
