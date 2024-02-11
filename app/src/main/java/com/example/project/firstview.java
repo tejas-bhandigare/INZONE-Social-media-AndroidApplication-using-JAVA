@@ -74,16 +74,16 @@ public class firstview extends AppCompatActivity {
            }
        });
 
-//       ImageView myImageView5 = findViewById(R.id.displayallposts);
-//
-//       myImageView5.setOnClickListener(new OnClickListener() {
-//           @Override
-//           public void onClick(View v) {
-//               // Handle the click event, e.g., start the next activity
-//               Intent intent = new Intent(firstview.this,DisplayAllPost.class);
-//               startActivity(intent);
-//           }
-//       });
+       ImageView myImageView5 = findViewById(R.id.displayallposts);
+
+       myImageView5.setOnClickListener(new OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               // Handle the click event, e.g., start the next activity
+               Intent intent = new Intent(firstview.this,AllusersPosts.class);
+               startActivity(intent);
+           }
+       });
 
        ImageView myImageView3 = findViewById(R.id.usersinfo);
 
