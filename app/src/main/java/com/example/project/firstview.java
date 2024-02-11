@@ -8,7 +8,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
+import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -24,6 +28,16 @@ public class firstview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstview);
+
+
+       animateLetter(R.id.textViewI, 1000); // Delay by 1000 milliseconds (1 second)
+       animateLetter(R.id.textViewN, 2000); // Delay by 2000 milliseconds (2 seconds)
+       animateLetter(R.id.textViewz, 3000);
+       animateLetter(R.id.textViewo, 4000);
+       animateLetter(R.id.textViewN2, 5000);
+       animateLetter(R.id.textViewe, 6000);
+
+
 
        Button logoutButton = findViewById(R.id.logout);
 
@@ -118,6 +132,14 @@ public class firstview extends AppCompatActivity {
 
         // Finish the current activity to prevent the user from going back to the main screen using the back button.
         finish();
+    }
+
+
+    private void animateLetter(int textViewId, int startDelay) {
+        TextView textView = findViewById(textViewId);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.slide_right_to_left);
+        animation.setStartOffset(startDelay);
+        textView.startAnimation(animation);
     }
 
 
