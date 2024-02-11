@@ -1,7 +1,6 @@
 package com.example.project;
 
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -24,6 +23,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.List;
+
 public class UploadPostsActivity extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
@@ -36,7 +37,6 @@ public class UploadPostsActivity extends AppCompatActivity {
     private StorageReference storageReference;
     private DatabaseReference databaseReference;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,6 +101,8 @@ public class UploadPostsActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                                 // Image uploaded successfully
+                                Toast.makeText(UploadPostsActivity.this, "Uploaded  sucessfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(UploadPostsActivity.this,firstview.class));
                                 imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                     @Override
                                     public void onSuccess(Uri uri) {
@@ -109,9 +111,6 @@ public class UploadPostsActivity extends AppCompatActivity {
 
                                         // Save post information to Firebase Realtime Database
                                         savePostToDatabase(userId, caption, imageUrl);
-
-                                        Toast.makeText(UploadPostsActivity.this, "upload post sucessfully", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(UploadPostsActivity.this,firstview.class));
                                     }
                                 });
                             }
@@ -122,8 +121,6 @@ public class UploadPostsActivity extends AppCompatActivity {
                                 // Handle image upload failure
                             }
                         });
-
-
             }
         }
     }

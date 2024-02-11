@@ -1,5 +1,5 @@
 package com.example.project;
-import android.annotation.SuppressLint;
+
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +20,6 @@ public class PostViewActivity extends AppCompatActivity {
 
     private DatabaseReference postsReference;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,7 @@ public class PostViewActivity extends AppCompatActivity {
         postList = new ArrayList<>();
         postAdapter = new PostAdapter(postList);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(PostViewActivity.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(postAdapter);
 
         // Retrieve the current user's ID
@@ -50,7 +49,7 @@ public class PostViewActivity extends AppCompatActivity {
         postsReference.orderByChild("userId").equalTo(userId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                postList.clear(); // Clear the list before adding new items
+                postList.clear();
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     // Get post information from the snapshot
                     Post post = postSnapshot.getValue(Post.class);
@@ -62,7 +61,7 @@ public class PostViewActivity extends AppCompatActivity {
                 }
 
                 // Notify the adapter about the data change
-                postAdapter.notifyDataSetChanged();
+                postAdapter.notifyDataSetChanged();  // Displays all posts
             }
 
             @Override
@@ -71,5 +70,5 @@ public class PostViewActivity extends AppCompatActivity {
             }
         });
     }
-
 }
+

@@ -20,8 +20,6 @@
     <!--        app:srcCompat="@drawable/baseline_person_24" />-->
 
 
-
-
     <ImageView
         android:id="@+id/add_post"
         android:layout_width="62dp"
@@ -34,16 +32,40 @@
         app:layout_constraintVertical_bias="0.995"
         app:srcCompat="@drawable/baseline_add_circle_24" />
 
+
+    <!--        <ScrollView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="408dp"-->
+    <!--                android:layout_height="709dp"-->
+    <!--                android:orientation="vertical"-->
+    <!--                tools:ignore="MissingConstraints"-->
+    <!--                tools:layout_editor_absoluteX="2dp"-->
+    <!--                tools:layout_editor_absoluteY="111dp">-->
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imageView5"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:srcCompat="@drawable/applogo" />-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </ScrollView>-->
+
+
     <ImageView
         android:id="@+id/profileset"
         android:layout_width="55dp"
         android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992"
+        app:layout_constraintVertical_bias="0.989"
         app:srcCompat="@drawable/baseline_person_24" />
 
     <ImageView
@@ -52,10 +74,10 @@
         android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/baseline_search_24" />
 
     <Button
@@ -65,44 +87,18 @@
         android:text="Log out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.399"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018" />
-
-
-
-
-<!--        <ScrollView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="408dp"-->
-<!--                android:layout_height="709dp"-->
-<!--                android:orientation="vertical"-->
-<!--                tools:ignore="MissingConstraints"-->
-<!--                tools:layout_editor_absoluteX="2dp"-->
-<!--                tools:layout_editor_absoluteY="111dp">-->
-<!--            <ImageView-->
-<!--                android:id="@+id/imageView5"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                app:srcCompat="@drawable/applogo" />-->
-
-<!--            </LinearLayout>-->
-
-
-<!--        </ScrollView>-->
-
+        app:layout_constraintVertical_bias="0.132" />
 
     <ImageView
         android:id="@+id/usersinfo"
-        android:layout_width="66dp"
-        android:layout_height="80dp"
+        android:layout_width="62dp"
+        android:layout_height="74dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.018"
@@ -110,8 +106,8 @@
 
     <ImageView
         android:id="@+id/drawer_menu"
-        android:layout_width="54dp"
-        android:layout_height="43dp"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
@@ -119,6 +115,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/baseline_menu_24" />
+
+    <ImageView
+        android:id="@+id/displayallposts"
+        android:layout_width="81dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@drawable/baseline_photo_library_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
