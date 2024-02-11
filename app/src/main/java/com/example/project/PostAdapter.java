@@ -14,6 +14,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
     private List<Post> postList;
 
+
+
     public PostAdapter(List<Post> postList) {
         this.postList = postList;
     }

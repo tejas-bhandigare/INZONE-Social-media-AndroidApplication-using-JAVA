@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -41,6 +42,18 @@ public class Log_in extends AppCompatActivity {
 
         TextView txt;
         txt=findViewById(R.id.sign_up_Redirect);
+
+
+        // Check if the user is already logged in when the activity starts
+        SharedPreferences sharedPreferences = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+        boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
+        if (isLoggedIn) {
+            // User is already logged in, navigate to the main screen
+            startActivity(new Intent(this, firstview.class));
+            finish(); // Finish the LoginActivity
+        }
+
+// Login logic...
 
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
