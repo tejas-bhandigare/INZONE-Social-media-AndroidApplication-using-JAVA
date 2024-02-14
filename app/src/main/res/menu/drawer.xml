@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/group1">
+        <item
+            android:icon="@drawable/menu1"
+            android:id="@+id/navmenu"
+            android:title="menu" />
+
+        <item
+            android:icon="@drawable/edit"
+            android:id="@+id/navprofileedit"
+            android:title="Profile edit"/>
+
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item
+            android:icon="@drawable/logout"
+            android:id="@+id/navlout"
+            android:title="Log Out" />
+
+        <item
+            android:icon="@drawable/forgotpassword"
+            android:id="@+id/navforgot"
+            android:title="Forgot Password" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:icon="@drawable/setting"
+            android:id="@+id/nav_setting"
+            android:title="Setting" />
+
+        <item
+            android:icon="@drawable/about"
+            android:id="@+id/navabout"
+            android:title="Aboout Us" />
+
+
+    </group>
+
+
+
+
+
+
+</menu>

@@ -15,9 +15,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.firebase.crashlytics.mapping_file_id"
+            android:value="@string/firebase_crashlytics_mapping_file_id" />
+        <activity
+            android:name=".DisplayAllPostsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".drawer"
+            android:exported="true" />
         <activity
             android:name=".AllusersPosts"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PostViewActivity"
             android:exported="true" />
@@ -51,6 +61,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
     </application>
 
 </manifest>
