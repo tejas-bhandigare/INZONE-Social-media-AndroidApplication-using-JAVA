@@ -39,7 +39,16 @@ public class firstview extends AppCompatActivity {
         setContentView(R.layout.activity_firstview);
 
 
+       ImageView myImageView4 = findViewById(R.id.buttonDrawerToggle);
 
+       myImageView4.setOnClickListener(new OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               // Handle the click event, e.g., start the next activity
+               Intent intent = new Intent(firstview.this, drawer.class);
+               startActivity(intent);
+           }
+       });
 
 
 
@@ -58,15 +67,15 @@ public class firstview extends AppCompatActivity {
 
 
 
-       Button logoutButton = findViewById(R.id.logout);
-
-       logoutButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Implement logout functionality here
-               logout();
-           }
-       });
+//       Button logoutButton = findViewById(R.id.logout);
+//
+//       logoutButton.setOnClickListener(new View.OnClickListener() {
+//           @Override
+//           public void onClick(View v) {
+//               // Implement logout functionality here
+//               logout();
+//           }
+//       });
 
 
 
@@ -116,29 +125,20 @@ public class firstview extends AppCompatActivity {
            }
        });
 
-       ImageView myImageView3 = findViewById(R.id.usersinfo);
+//       ImageView myImageView3 = findViewById(R.id.usersinfo);
+//
+//       myImageView3.setOnClickListener(new OnClickListener() {
+//           @Override
+//           public void onClick(View v) {
+//               // Handle the click event, e.g., start the next activity
+//               Intent intent = new Intent(firstview.this, UserDataActivity.class);
+//               startActivity(intent);
+//           }
+//       });
 
-       myImageView3.setOnClickListener(new OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Handle the click event, e.g., start the next activity
-               Intent intent = new Intent(firstview.this, UserDataActivity.class);
-               startActivity(intent);
-           }
-       });
 
 
 
-       ImageView myImageView4 = findViewById(R.id.drawer_menu);
-
-       myImageView4.setOnClickListener(new OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Handle the click event, e.g., start the next activity
-               Intent intent = new Intent(firstview.this, drawer.class);
-               startActivity(intent);
-           }
-       });
 
        ImageView myImageView = findViewById(R.id.profileset);
 
@@ -154,21 +154,21 @@ public class firstview extends AppCompatActivity {
 
 
     }
-    private void logout() {
-        // Perform any necessary logout actions, such as clearing user session, etc.
-
-        // After logout, you might want to navigate to the login screen or any other desired screen.
-        Intent intent = new Intent(this, Log_in.class);
-        startActivity(intent);
-
-        // Finish the current activity to prevent the user from going back to the main screen using the back button.
-        finish();
-    }
+//    private void logout() {
+//        // Perform any necessary logout actions, such as clearing user session, etc.
+//
+//        // After logout, you might want to navigate to the login screen or any other desired screen.
+//        Intent intent = new Intent(this, Log_in.class);
+//        startActivity(intent);
+//
+//        // Finish the current activity to prevent the user from going back to the main screen using the back button.
+//        finish();
+//    }
 
 
     private void animateLetter(int textViewId, int startDelay) {
         TextView textView = findViewById(textViewId);
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.slide_right_to_left);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.p_name);
         animation.setStartOffset(startDelay);
         textView.startAnimation(animation);
     }

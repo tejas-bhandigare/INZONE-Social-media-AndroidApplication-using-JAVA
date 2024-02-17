@@ -15,10 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
+        <activity
+            android:name=".Aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.firebase.crashlytics.mapping_file_id"
             android:value="@string/firebase_crashlytics_mapping_file_id" />
+
         <activity
             android:name=".DisplayAllPostsActivity"
             android:exported="true" />

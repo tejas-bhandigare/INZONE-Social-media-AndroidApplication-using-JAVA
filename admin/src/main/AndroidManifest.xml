@@ -10,6 +10,10 @@
         <activity
             android:name=".Admin_Panel"
             android:exported="true" />
+
+        <activity android:name=".search_user"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -8,21 +8,21 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="357dp"
-        android:layout_height="114dp"
-        android:paddingStart="35dp"
-        android:text="Admin Here 🧐"
+        android:layout_width="363dp"
+        android:layout_height="73dp"
+        android:paddingStart="55dp"
+        android:text="Admin Here "
         android:textColor="#0097A7"
         android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.038" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/userlist"
         android:layout_width="199dp"
         android:layout_height="53dp"
         android:background="@drawable/btn"
@@ -37,8 +37,8 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="206dp"
-        android:layout_height="58dp"
+        android:layout_width="199dp"
+        android:layout_height="53dp"
         android:background="@drawable/btn"
         android:text="Posts"
         android:textSize="20sp"

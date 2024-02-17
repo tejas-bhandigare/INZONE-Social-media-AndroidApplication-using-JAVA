@@ -11,7 +11,7 @@
 
 
 <include
-    layout="@layout/activity_main_content"/>
+    layout="@layout/activity_firstview" />
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
@@ -20,7 +20,7 @@
         app:menu="@menu/drawer"
         app:dividerInsetStart="50dp"
         app:itemIconPadding="30dp"
-        app:headerLayout="@layout/drawer_header"
+
         android:layout_gravity="start"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -4,10 +4,7 @@
 
     <group
         android:id="@+id/group1">
-        <item
-            android:icon="@drawable/menu1"
-            android:id="@+id/navmenu"
-            android:title="menu" />
+
 
         <item
             android:icon="@drawable/edit"

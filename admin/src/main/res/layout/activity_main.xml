@@ -23,17 +23,16 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="194dp"
-        android:layout_height="81dp"
-        android:text="Admin"
+        android:layout_width="251dp"
+        android:layout_height="77dp"
+        android:text="Admin 🥸"
         android:textColor="@color/blue"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <EditText
         android:id="@+id/admin_password"
@@ -52,10 +51,11 @@
 
     <Button
         android:id="@+id/admin_login_button"
-        android:layout_width="123dp"
-        android:layout_height="60dp"
+        android:layout_width="153dp"
+        android:layout_height="62dp"
         android:background="@drawable/btn"
         android:text="Log in"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
