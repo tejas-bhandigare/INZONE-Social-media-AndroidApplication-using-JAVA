@@ -34,19 +34,7 @@
         app:layout_constraintVertical_bias="0.989"
         app:srcCompat="@drawable/baseline_person_24" />
 
-    <ImageView
-        android:id="@+id/search_user"
-        android:layout_width="55dp"
-        android:layout_height="59dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/baseline_search_24" />
-
-<!--    <Button-->
+    <!--    <Button-->
 <!--        android:id="@+id/logout"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -69,6 +57,18 @@
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        app:layout_constraintVertical_bias="0.091"-->
 <!--        app:srcCompat="@drawable/baseline_person_24" />-->
+
+    <ImageView
+        android:id="@+id/search_user"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        app:srcCompat="@drawable/baseline_search_24" />
 
     <ImageView
         android:id="@+id/displayallposts"

@@ -1,4 +1,5 @@
 package com.example.project;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +13,15 @@ import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
+   
+
     private List<Post> postList;
 
 
 
     public PostAdapter(List<Post> postList) {
+
+
         this.postList = postList;
     }
 
@@ -44,7 +49,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         return postList.size();
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView postImageView;
         TextView captionTextView;
 
@@ -52,6 +57,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             super(itemView);
             postImageView = itemView.findViewById(R.id.postImageView);
             captionTextView = itemView.findViewById(R.id.captionTextView);
+
+
         }
+
     }
 }

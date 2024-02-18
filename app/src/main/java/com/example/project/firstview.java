@@ -67,16 +67,18 @@ public class firstview extends AppCompatActivity {
 
 
 
-//       Button logoutButton = findViewById(R.id.logout);
-//
-//       logoutButton.setOnClickListener(new View.OnClickListener() {
-//           @Override
-//           public void onClick(View v) {
-//               // Implement logout functionality here
-//               logout();
-//           }
-//       });
 
+
+       ImageView myImageView7 = findViewById(R.id.displayallposts);
+
+       myImageView7.setOnClickListener(new OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               // Handle the click event, e.g., start the next activity
+               Intent intent = new Intent(firstview.this, DisplayAllPostsActivity.class);
+               startActivity(intent);
+           }
+       });
 
 
 
@@ -91,16 +93,6 @@ public class firstview extends AppCompatActivity {
            }
        });
 
-       ImageView myImageView7 = findViewById(R.id.displayallposts);
-
-       myImageView7.setOnClickListener(new OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Handle the click event, e.g., start the next activity
-               Intent intent = new Intent(firstview.this, DisplayAllPostsActivity.class);
-               startActivity(intent);
-           }
-       });
 
 
        ImageView myImageView2 = findViewById(R.id.search_user);
