@@ -11,7 +11,8 @@
 
 
 <include
-    layout="@layout/activity_firstview" />
+    layout="@layout/activity_firstview"
+ />
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"

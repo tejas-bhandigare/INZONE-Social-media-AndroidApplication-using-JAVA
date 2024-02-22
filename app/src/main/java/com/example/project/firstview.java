@@ -45,7 +45,7 @@ public class firstview extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                // Handle the click event, e.g., start the next activity
-               Intent intent = new Intent(firstview.this, drawer.class);
+               Intent intent = new Intent(firstview.this,drawer.class);
                startActivity(intent);
            }
        });
@@ -68,17 +68,6 @@ public class firstview extends AppCompatActivity {
 
 
 
-//
-//       ImageView myImageView7 = findViewById(R.id.displayallposts);
-//
-//       myImageView7.setOnClickListener(new OnClickListener() {
-//           @Override
-//           public void onClick(View v) {
-//               // Handle the click event, e.g., start the next activity
-//               Intent intent = new Intent(firstview.this, DisplayAllPostsActivity.class);
-//               startActivity(intent);
-//           }
-//       });
 
 
 
@@ -106,27 +95,6 @@ public class firstview extends AppCompatActivity {
            }
        });
 
-       ImageView myImageView5 = findViewById(R.id.displayallposts);
-
-       myImageView5.setOnClickListener(new OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Handle the click event, e.g., start the next activity
-               Intent intent = new Intent(firstview.this,AllusersPosts.class);
-               startActivity(intent);
-           }
-       });
-
-//       ImageView myImageView3 = findViewById(R.id.usersinfo);
-//
-//       myImageView3.setOnClickListener(new OnClickListener() {
-//           @Override
-//           public void onClick(View v) {
-//               // Handle the click event, e.g., start the next activity
-//               Intent intent = new Intent(firstview.this, UserDataActivity.class);
-//               startActivity(intent);
-//           }
-//       });
 
 
 
@@ -146,16 +114,7 @@ public class firstview extends AppCompatActivity {
 
 
     }
-//    private void logout() {
-//        // Perform any necessary logout actions, such as clearing user session, etc.
-//
-//        // After logout, you might want to navigate to the login screen or any other desired screen.
-//        Intent intent = new Intent(this, Log_in.class);
-//        startActivity(intent);
-//
-//        // Finish the current activity to prevent the user from going back to the main screen using the back button.
-//        finish();
-//    }
+
 
 
     private void animateLetter(int textViewId, int startDelay) {

@@ -46,3 +46,72 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         }
     }
 }
+
+
+
+
+//package com.example.project;
+//
+//import android.view.LayoutInflater;
+//import android.view.View;
+//import android.view.ViewGroup;
+//import android.widget.TextView;
+//import androidx.annotation.NonNull;
+//import androidx.recyclerview.widget.RecyclerView;
+//import java.util.List;
+//
+//public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
+//
+//    private List<UserInfo> userInfoList;
+//    private OnUserClickListener onUserClickListener; // Listener for user clicks
+//
+//    public UserAdapter(List<UserInfo> userInfoList, OnUserClickListener onUserClickListener) {
+//        this.userInfoList = userInfoList;
+//        this.onUserClickListener = onUserClickListener;
+//    }
+//
+//    @NonNull
+//    @Override
+//    public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user, parent, false);
+//        return new UserViewHolder(view);
+//    }
+//
+//    @Override
+//    public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+//        UserInfo userInfo = userInfoList.get(position);
+//        holder.bind(userInfo);
+//    }
+//
+//    @Override
+//    public int getItemCount() {
+//        return userInfoList.size();
+//    }
+//
+//    class UserViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+//        TextView usernameTextView;
+//
+//        UserViewHolder(@NonNull View itemView) {
+//            super(itemView);
+//            usernameTextView = itemView.findViewById(R.id.userNameTextView);
+//            itemView.setOnClickListener(this); // Set click listener on the entire item
+//        }
+//
+//        void bind(UserInfo userInfo) {
+//            usernameTextView.setText(userInfo.getUsername());
+//        }
+//
+//        @Override
+//        public void onClick(View v) {
+//            int position = getAdapterPosition();
+//            if (position != RecyclerView.NO_POSITION && onUserClickListener != null) {
+//                onUserClickListener.onUserClick(position); // Notify activity about user click
+//            }
+//        }
+//    }
+//
+//    // Interface to handle user clicks
+//    public interface OnUserClickListener {
+//        void onUserClick(int position);
+//    }
+//}
