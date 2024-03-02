@@ -7,19 +7,6 @@
     tools:context=".firstview">
 
 
-    <ImageView
-        android:id="@+id/add_post"
-        android:layout_width="60dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995"
-        app:srcCompat="@drawable/baseline_add_circle_24" />
-
-
     <!--    <Button-->
     <!--        android:id="@+id/logout"-->
     <!--        android:layout_width="wrap_content"-->
@@ -44,6 +31,18 @@
     <!--        app:layout_constraintVertical_bias="0.091"-->
     <!--        app:srcCompat="@drawable/baseline_person_24" />-->
 
+
+    <ImageView
+        android:id="@+id/add_post"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baseline_add_circle_24" />
 
     <ImageView
         android:id="@+id/profileset"
@@ -71,17 +70,17 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="715dp"
+        android:layout_width="405dp"
+        android:layout_height="675dp"
         android:background="@drawable/linerlayout_border"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:paddingTop="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/add_post"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDrawerToggle"
         tools:context=".firstview"
         tools:ignore="MissingConstraints">
 
