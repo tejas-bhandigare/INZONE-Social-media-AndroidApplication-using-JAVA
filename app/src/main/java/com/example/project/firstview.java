@@ -39,16 +39,7 @@ public class firstview extends AppCompatActivity {
         setContentView(R.layout.activity_firstview);
 
 
-       ImageView myImageView4 = findViewById(R.id.buttonDrawerToggle);
 
-       myImageView4.setOnClickListener(new OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               // Handle the click event, e.g., start the next activity
-               Intent intent = new Intent(firstview.this,drawer.class);
-               startActivity(intent);
-           }
-       });
 
 
 
@@ -66,7 +57,16 @@ public class firstview extends AppCompatActivity {
 
 
 
+       ImageView myImageView4 = findViewById(R.id.buttonDrawerToggle);
 
+       myImageView4.setOnClickListener(new OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               // Handle the click event, e.g., start the next activity
+               Intent intent = new Intent(firstview.this,drawer.class);
+               startActivity(intent);
+           }
+       });
 
 
 
